@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="200.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="_09Morsebaum_GUI.MorseController">
+    <Button fx:id="bEncode" layoutX="60.0" layoutY="87.0" mnemonicParsing="false" onAction="#oaEncode" prefWidth="80.0"
+            text="Encode"/>
+    <Button fx:id="bDecode" layoutX="268.0" layoutY="87.0" mnemonicParsing="false" onAction="#oaDecode" prefWidth="80.0"
+            text="Decode"/>
+    <TextField fx:id="tfInput" alignment="CENTER" layoutY="20.0" prefHeight="40.0" prefWidth="600.0"
+               promptText="Eingabe">
+        <font>
+            <Font size="24.0"/>
+        </font>
+    </TextField>
+    <TextField fx:id="tfOutput" alignment="CENTER" layoutY="140.0" prefHeight="40.0" prefWidth="600.0"
+               promptText="Ausgabe">
+        <font>
+            <Font size="24.0"/>
+        </font>
+    </TextField>
+    <Button layoutX="459.0" layoutY="87.0" mnemonicParsing="false" onAction="#oaClear" prefWidth="80.0" text="Clear"/>
+</AnchorPane>

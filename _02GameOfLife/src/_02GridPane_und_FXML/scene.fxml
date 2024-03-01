@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<GridPane gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" styleClass="gridPane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="_02GridPane_und_FXML.Controller">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+
+    <!-- 0th row -->
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="100.0" onMouseClicked="#setColor" stroke="BLACK" strokeType="INSIDE" styleClass="rectangles" width="100.0" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="100.0" onMouseClicked="#setColor" stroke="BLACK" strokeType="INSIDE" styleClass="rectangles" width="100.0" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="100.0" onMouseClicked="#setColor" stroke="BLACK" strokeType="INSIDE" styleClass="rectangles" width="100.0" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="100.0" onMouseClicked="#setColor" stroke="BLACK" strokeType="INSIDE" styleClass="rectangles" width="100.0" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+
+    <!-- 1st row -->
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="100.0" onMouseClicked="#setColor" stroke="BLACK" strokeType="INSIDE" styleClass="rectangles" width="100.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="100.0" onMouseClicked="#setColor" stroke="BLACK" strokeType="INSIDE" styleClass="rectangles" width="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="100.0" onMouseClicked="#setColor" stroke="BLACK" strokeType="INSIDE" styleClass="rectangles" width="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="100.0" onMouseClicked="#setColor" stroke="BLACK" strokeType="INSIDE" styleClass="rectangles" width="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+    <!-- 2nd row -->
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="100.0" onMouseClicked="#setColor" stroke="BLACK" strokeType="INSIDE" styleClass="rectangles" width="100.0" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="100.0" onMouseClicked="#setColor" stroke="BLACK" strokeType="INSIDE" styleClass="rectangles" width="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="100.0" onMouseClicked="#setColor" stroke="BLACK" strokeType="INSIDE" styleClass="rectangles" width="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="100.0" onMouseClicked="#setColor" stroke="BLACK" strokeType="INSIDE" styleClass="rectangles" width="100.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+
+    <!-- 3rd row -->
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="100.0" onMouseClicked="#setColor" stroke="BLACK" strokeType="INSIDE" styleClass="rectangles" width="100.0" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="100.0" onMouseClicked="#setColor" stroke="BLACK" strokeType="INSIDE" styleClass="rectangles" width="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="100.0" onMouseClicked="#setColor" stroke="BLACK" strokeType="INSIDE" styleClass="rectangles" width="100.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="100.0" onMouseClicked="#setColor" stroke="BLACK" strokeType="INSIDE" styleClass="rectangles" width="100.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+</GridPane>
