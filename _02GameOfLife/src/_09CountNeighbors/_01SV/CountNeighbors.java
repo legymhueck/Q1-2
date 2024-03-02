@@ -18,6 +18,7 @@ import javafx.stage.Stage;
 
 public class CountNeighbors extends Application {
   private HBox bottomBar;
+  private HBox topBar;
   private final int rectSize = 40;
   private final int rows = 10;
   private final int cols = 10;
@@ -30,7 +31,10 @@ public class CountNeighbors extends Application {
     VBox root = createScene();
     generateRandomRectangles();
     primaryStage.setTitle("Count Neighbors");
-    double height = rectSize * rows + bottomBar.getPrefHeight() + bottomBar.getPadding().getTop() + bottomBar.getPadding().getBottom() + bottomBar.getInsets().getTop() + bottomBar.getInsets().getBottom();
+    double height = rectSize * rows
+        + topBar.getPrefHeight() + topBar.getPadding().getTop() + topBar.getPadding().getBottom()
+        + bottomBar.getPrefHeight() + bottomBar.getPadding().getTop();
+
     primaryStage.setScene(new Scene(root, cols * rectSize, height));
     primaryStage.show();
   }
@@ -46,13 +50,26 @@ public class CountNeighbors extends Application {
     root.setVisible(true);
     gridPane.setGridLinesVisible(true);
 
-    root.getChildren().addAll(gridPane, bottomBar);
+    root.getChildren().addAll(createTopBar(), gridPane, bottomBar);
     return root;
   }
 
   private void countNeighbors(MouseEvent event) {
     int count = 0;
-    ((Label) bottomBar.getChildren().get(0)).setText("Neighbors: " + count); // Update the label text
+      ((Label) bottomBar.getChildren().get(0)).setText("Neighbors: " + count); // Update the label text
+  }
+
+  private HBox createTopBar() {
+    topBar = new HBox();
+    topBar.setMinHeight(45);
+    topBar.setMaxHeight(45);
+    topBar.setPrefHeight(45);
+    topBar.setSpacing(10);
+    topBar.setPadding(new Insets(10, 10, 10, 0));
+    Button btnGenerate = new Button("Generate");
+    btnGenerate.setOnAction(e -> generateRandomRectangles());
+    topBar.getChildren().addAll(btnGenerate);
+    return topBar;
   }
 
   private HBox createBottomBar() {
