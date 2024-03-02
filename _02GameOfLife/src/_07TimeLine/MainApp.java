@@ -25,7 +25,6 @@ public class MainApp extends Application {
   private final int cols = 10;
   private Button bClear;
   private Button bFill;
-  private Button bPercentFill;
   private Button bPlayRandom;
   private Button bStop;
   private TextField tfPercent;
@@ -70,27 +69,6 @@ public class MainApp extends Application {
 
     bStop.setOnAction(e -> stopRandomRectangles());
 
-    bFill.setOnAction(e -> {
-      for (Node node : gridPane.getChildren()) {
-        if (node instanceof Rectangle) {
-          setRectColor((Rectangle) node);
-        }
-      }
-    });
-
-    bPercentFill.setOnAction(e -> {
-      for (Node node : gridPane.getChildren()) {
-        if (node instanceof Rectangle) {
-          int percent = (int) (Math.random() * 100);
-          if (percent < Integer.parseInt(tfPercent.getText())) {
-            ((Rectangle) node).setFill(Color.BLACK);
-          } else {
-            ((Rectangle) node).setFill(Color.WHITE);
-          }
-        }
-      }
-    });
-
     bPlayRandom.setOnAction(e -> playRandomRectangles());
   }
 
@@ -99,8 +77,6 @@ public class MainApp extends Application {
     topBar.setSpacing(10);
     topBar.setPadding(new Insets(10, 10, 10, 0));
     bClear = new Button("Clear");
-    bFill = new Button("Fill");
-    bPercentFill = new Button("Percent");
     bPlayRandom = new Button("Play");
     bStop = new Button("Stop");
     tfTime = new TextField();
@@ -108,12 +84,7 @@ public class MainApp extends Application {
     tfTime.setMinWidth(40);
     tfTime.setPrefWidth(40);
     tfTime.setText("100");
-    tfPercent = new TextField();
-    tfPercent.setMaxWidth(40);
-    tfPercent.setMinWidth(40);
-    tfPercent.setPrefWidth(40);
-    tfPercent.setText("20");
-    topBar.getChildren().addAll(bClear, bFill, bPlayRandom, tfTime, bStop, bPercentFill, tfPercent);
+    topBar.getChildren().addAll(bPlayRandom, tfTime, bStop, bClear);
     return topBar;
   }
 
