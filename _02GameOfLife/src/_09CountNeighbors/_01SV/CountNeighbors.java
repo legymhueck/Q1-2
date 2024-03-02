@@ -1,4 +1,4 @@
-package _09CountNeighbors;
+package _09CountNeighbors._01SV;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;
@@ -21,7 +21,6 @@ public class CountNeighbors extends Application {
   private final int rectSize = 40;
   private final int rows = 10;
   private final int cols = 10;
-  private Button bCountNeighbors;
   private GridPane gridPane;
   private int percentRect = 20;
 
