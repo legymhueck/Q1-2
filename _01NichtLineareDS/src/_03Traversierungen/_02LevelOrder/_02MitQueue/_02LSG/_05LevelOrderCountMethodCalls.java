@@ -7,21 +7,21 @@
                \
                 9
  */
-package _13LevelOrder._02MitQueue._02LSG;
+package _03Traversierungen._02LevelOrder._02MitQueue._02LSG;
 
 import resources.BinarySearchTree;
 import resources.List;
 import resources.Queue;
 import resources.Zahl;
 
-public class _04LevelOrderCountMethodCalls extends _01LevelOrder {
+public class _05LevelOrderCountMethodCalls extends _01LevelOrder {
   private static final String ANSI_BLUE = "\u001B[34m";
   private static final String ANSI_RESET = "\u001B[0m";
   private static final String ANSI_YELLOW = "\u001B[33m";
   private int whileSchleifeAufrufeNichtOptimiert = 0;
   private int whileSchleifeAufrufeOptimiert = 0;
 
-  public _04LevelOrderCountMethodCalls() {
+  public _05LevelOrderCountMethodCalls() {
     super();
   }
 
@@ -56,7 +56,7 @@ public class _04LevelOrderCountMethodCalls extends _01LevelOrder {
   }
 
   public static void main(String[] args) {
-    _04LevelOrderCountMethodCalls app = new _04LevelOrderCountMethodCalls();
+    _05LevelOrderCountMethodCalls app = new _05LevelOrderCountMethodCalls();
     BinarySearchTree<Zahl> meinBST = app.fillBST();
     app.levelOrderOptimiert(meinBST);
     app.levelOrderNichtOptimiert(meinBST);

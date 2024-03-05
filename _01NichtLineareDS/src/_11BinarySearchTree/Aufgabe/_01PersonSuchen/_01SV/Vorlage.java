@@ -1,4 +1,4 @@
-package Aufgabe._01PersonSuchen._01SV;
+package _11BinarySearchTree.Aufgabe._01PersonSuchen._01SV;
 
 import _11BinarySearchTree.Aufgabe._01PersonSuchen._02LSG.Person;
 import resources.BinarySearchTree;

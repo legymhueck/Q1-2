@@ -1,13 +1,13 @@
-package _13LevelOrder._02MitQueue._02LSG;
+package _03Traversierungen._02LevelOrder._02MitQueue._02LSG;
 
 import resources.BinarySearchTree;
 import resources.Zahl;
 
 import java.util.Random;
 
-public class _03LevelOrderRandomNumbers extends _01LevelOrder {
+public class _04LevelOrderRandomNumbers extends _01LevelOrder {
 
-  public _03LevelOrderRandomNumbers() {
+  public _04LevelOrderRandomNumbers() {
     super();
   }
 
@@ -24,7 +24,7 @@ public class _03LevelOrderRandomNumbers extends _01LevelOrder {
   }
 
   public static void main(String[] args) {
-    _03LevelOrderRandomNumbers app = new _03LevelOrderRandomNumbers();
+    _04LevelOrderRandomNumbers app = new _04LevelOrderRandomNumbers();
     BinarySearchTree<Zahl> meinBST = app.fillBSTWithRandomNumbers();
 
     app.printList(app.levelOrder(meinBST));

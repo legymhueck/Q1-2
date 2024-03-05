@@ -1,5 +1,12 @@
 package resources;
-
+/**
+ * Klasse zum Erzeugen eines binären Baumes mit String-Elementen
+ *
+ *       20
+ *    10   30
+ *   5 15 25 35
+ * 1
+ */
 public class BinaryTreeString {
     private final BinaryTree<String> wurzel;
     

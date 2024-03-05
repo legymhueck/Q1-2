@@ -1,4 +1,4 @@
-package _13LevelOrder._01OhneQueue_Mit_Tiefe;
+package _03Traversierungen._02LevelOrder._01MitTiefe;
 
 import resources.BinarySearchTree;
 import resources.Zahl;

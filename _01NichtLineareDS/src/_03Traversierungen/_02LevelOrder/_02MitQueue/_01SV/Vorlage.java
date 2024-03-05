@@ -7,7 +7,7 @@
                \
                 9
  */
-package _13LevelOrder._02MitQueue._01SV;
+package _03Traversierungen._02LevelOrder._02MitQueue._01SV;
 
 import resources.BinarySearchTree;
 import resources.List;

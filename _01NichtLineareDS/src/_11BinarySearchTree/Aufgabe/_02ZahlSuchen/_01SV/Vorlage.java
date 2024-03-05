@@ -1,4 +1,4 @@
-package Aufgabe._02ZahlSuchen._01SV;
+package _11BinarySearchTree.Aufgabe._02ZahlSuchen._01SV;
 
 import _11BinarySearchTree.Aufgabe._02ZahlSuchen._02LSG.Zahl;
 import resources.BinarySearchTree;

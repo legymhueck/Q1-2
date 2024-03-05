@@ -1,4 +1,4 @@
-package _03Traversierungen;
+package _03Traversierungen._01PreInPostorder;
 
 import resources.BinaryTree;
 import resources.BinaryTreeInteger;

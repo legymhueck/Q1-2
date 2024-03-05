@@ -7,16 +7,16 @@
                \
                 9
  */
-package _13LevelOrder._02MitQueue._02LSG;
+package _03Traversierungen._02LevelOrder._02MitQueue._02LSG;
 
 import resources.BinarySearchTree;
 import resources.List;
 import resources.Queue;
 import resources.Zahl;
 
-public class _02LevelOrderOptimiert extends _01LevelOrder {
+public class _03LevelOrderMitList extends _01LevelOrder {
 
-  public _02LevelOrderOptimiert() {
+  public _03LevelOrderMitList() {
     super();
   }
 
@@ -39,7 +39,7 @@ public class _02LevelOrderOptimiert extends _01LevelOrder {
   }
 
   public static void main(String[] args) {
-    _02LevelOrderOptimiert app = new _02LevelOrderOptimiert();
+    _03LevelOrderMitList app = new _03LevelOrderMitList();
 
     BinarySearchTree<Zahl> meinBST = app.fillBST();
     app.printList(app.levelOrder(meinBST));

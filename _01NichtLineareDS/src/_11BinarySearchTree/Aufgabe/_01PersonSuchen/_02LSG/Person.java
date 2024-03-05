@@ -1,4 +1,4 @@
-package Aufgabe._01PersonSuchen._02LSG;
+package _11BinarySearchTree.Aufgabe._01PersonSuchen._02LSG;
 
 import resources.ComparableContent;
 

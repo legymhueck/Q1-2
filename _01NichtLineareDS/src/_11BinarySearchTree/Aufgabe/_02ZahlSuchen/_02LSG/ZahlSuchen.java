@@ -9,7 +9,7 @@ private static final String ANSI_PURPLE = "\u001B[35m";
 private static final String ANSI_CYAN = "\u001B[36m";
 private static final String ANSI_WHITE = "\u001B[37m";
  */
-package Aufgabe._02ZahlSuchen._02LSG;
+package _11BinarySearchTree.Aufgabe._02ZahlSuchen._02LSG;
 
 import resources.BinarySearchTree;
 
