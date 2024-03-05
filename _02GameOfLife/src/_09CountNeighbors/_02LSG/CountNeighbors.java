@@ -6,6 +6,7 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
@@ -23,8 +24,7 @@ public class CountNeighbors extends Application {
   private final int rows = 10;
   private final int cols = 10;
   private GridPane gridPane;
-  private int percentRect = 20;
-
+  private TextField txtPercent;
 
   @Override
   public void start(Stage primaryStage) {
@@ -85,7 +85,13 @@ public class CountNeighbors extends Application {
     topBar.setPadding(new Insets(10, 10, 10, 0));
     Button btnGenerate = new Button("Generate");
     btnGenerate.setOnAction(e -> generateRandomRectangles());
-    topBar.getChildren().addAll(btnGenerate);
+    txtPercent = new TextField();
+    txtPercent.setPromptText("Percent");
+    txtPercent.setText("20");
+    txtPercent.setMinWidth(50);
+    txtPercent.setMaxWidth(50);
+    txtPercent.setPrefWidth(50);
+    topBar.getChildren().addAll(btnGenerate, txtPercent);
     return topBar;
   }
 
@@ -119,7 +125,7 @@ public class CountNeighbors extends Application {
     for (Node node : gridPane.getChildren()) {
       if (node instanceof Rectangle) {
         int percent = (int) (Math.random() * 100);
-        if (percent < percentRect) {
+        if (percent < Integer.parseInt(txtPercent.getText())) {
           ((Rectangle) node).setFill(Color.BLACK);
         } else {
           ((Rectangle) node).setFill(Color.WHITE);
